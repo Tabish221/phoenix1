@@ -1,0 +1,34 @@
+.copyright {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: #000;
+    border: 1px solid #EBAF26;
+    padding: 15px 0;
+    border-radius: 5px;
+
+    p {
+        color: #FFF;
+        text-align: center;
+        font-family: $os;
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 300;
+        line-height: 28.8px; /* 160% */
+    }
+
+
+    .copyright-leftIcon {
+        position: absolute;
+        bottom: -6px;
+        left: -7px;
+    }
+
+    .copyright-rightIcon {
+        position: absolute;
+        top: -6px;
+        right: -7px;
+        transform: rotate(180deg);
+    }
+}

@@ -1,0 +1,375 @@
+@import "var";
+@import "format";
+@import "header";
+@import "footer";
+
+body,
+html {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+  scroll-behavior: smooth; /* Smooth scrolling */
+}
+
+@keyframes mover {
+    0% { transform: translateY(0); }
+    100% { transform: translateY(-10px); }
+}
+
+@keyframes scroll-left {
+    from {
+        transform: translateX(100%);
+    }
+    to {
+        transform: translateX(-100%);
+    }
+}
+
+/* Main Banner CSS */
+.mainBanner {
+    background-image: url(../images/banner/home-bg.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100vh;
+    overflow: hidden;
+    position: relative;
+
+    .container-fluid {
+        height: 100%;
+    }
+
+    & > * {
+        position: relative;
+        z-index: 2;
+    }
+
+    .mainBanner-backImg {
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        margin: auto;
+        z-index: 1;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+         
+
+        img {
+            max-width: 80%;
+            max-height: 85%;
+            object-fit: contain;
+            object-position: center;
+            -webkit-animation: mover 1s infinite  alternate;
+            animation: mover 1s infinite  alternate;
+        }
+    }
+
+    .mainBanner-social {
+        position: absolute;
+        right: 20px;
+        top: 0;
+        bottom: 0;
+        margin: auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: fit-content;
+        height: fit-content;
+        z-index: 3;
+
+        ul {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            gap: 35px;
+
+            li {
+                a {
+                    display: flex;
+                    width: 50px;
+                    height: 50px;
+                    justify-content: center;
+                    align-items: center;
+                    border-radius: 30px;
+                    border: 1px solid #FFF;
+                    font-size: 24px;
+                    color: #fff;
+
+                    &:hover {
+                        background-color: #fff;
+                        color: #000;
+                    }
+                }
+            }
+        }
+    }
+
+    .mainBanner-main {
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        padding: 60px 0 150px;
+
+
+        .mainBanner-heading {
+            text-align: center;
+
+            h1 {
+                color: #FFF;
+                font-family: $lo;
+                font-size: 154px;
+                font-style: normal;
+                font-weight: 500;
+                line-height: normal;
+                letter-spacing: 0.25em;
+                text-transform: uppercase;
+                background: url(../images/banner/heading-bg.png);
+                background-position: center;
+                background-size: cover;
+                -webkit-text-fill-color: transparent;
+                -webkit-background-clip: text;
+            }
+
+            h2 {
+                color: #FFF;
+                font-family: $lo;
+                font-size: 65px;
+                font-weight: 500;
+                line-height: normal;
+                letter-spacing: 0.25em;
+                text-transform: uppercase;
+                background: url(../images/banner/heading-bg.png);
+                background-position: center;
+                background-size: cover;
+                -webkit-text-fill-color: transparent;
+                -webkit-background-clip: text;
+            }
+        }
+
+        .mainBanner-btn {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 30px;
+            padding-bottom: 80px;
+
+            a {
+                min-width: 250px;
+                display: inline-flex;
+                align-items: center;
+                justify-content: center;
+                position: relative;
+                background-color: #000;
+                border: 1px solid #f0aa2b;
+                padding: 30px 15px;
+                border-radius: 12px;
+
+                .themeBtn-leftIcon {
+                    position: absolute;
+                    bottom: -6px;
+                    left: -7px;
+                }
+
+                .themeBtn-rightIcon {
+                    position: absolute;
+                    top: -6px;
+                    right: -7px;
+                    transform: rotate(180deg);
+                }
+
+                span {
+                    display: flex;
+                    align-items: center;
+                    gap: 8px;
+                    color: #EBAF26;
+                    text-shadow: 0px 4px 20px #EBAF26;
+                    font-family: $lo;
+                    font-size: 20px;
+                    font-weight: 600;
+                    line-height: normal;
+                    text-transform: capitalize;
+
+                    svg {
+                        width: 1em;
+                        height: auto;
+                        margin-top: -2px;
+                    }
+                }
+
+                &:hover {
+                    transform: scale(1.02);
+                }
+            }
+        }
+
+        .mainBanner-cont {
+            
+            p {
+                padding: 0 0% 0 8%;
+                width: 60%;
+                color: #FFF;
+                font-family: $os;
+                font-size: 20px;
+                font-style: normal;
+                font-weight: 300;
+                line-height: 32px; /* 160% */
+            }
+        }
+    }
+}
+
+.mainBanner-nav {
+    position: absolute;
+    left: 20px;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: fit-content;
+    height: fit-content;
+    z-index: 3;
+    padding-bottom: 90px;
+
+    ul {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 20px; /* Adjust spacing between links */
+
+        li {
+            margin: 0;
+
+            a {
+                writing-mode: vertical-lr;
+                text-orientation: mixed;
+                color: #FFF;
+                font-family: $os;
+                font-size: 22px;
+                font-weight: 300;
+                line-height: 1.2;
+
+                &:hover {
+                    color: #ffd700; /* Change to any color for hover effect */
+                }
+            }
+        }
+    }
+}
+
+.phoenix-marquee {
+    border-top: 2px solid #EBAF26;
+    border-bottom: 2px solid #EBAF26;
+    background: #000;
+    padding: 20px 0 10px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    overflow: hidden;
+    white-space: nowrap;
+    width: 100%;
+
+    .swiper-wrapper {
+        transition-timing-function: linear !important;
+    }
+
+    .swiper-slide {
+        color: #FFF;
+        font-family: $lo;
+        font-size: 40px;
+        font-weight: 500;
+        line-height: 1;
+        letter-spacing: 0.25em;
+        text-transform: uppercase;
+        background: url(../images/banner/heading-bg.png);
+        background-position: center;
+        background-size: cover;
+        -webkit-text-fill-color: transparent;
+        -webkit-background-clip: text;
+        text-wrap: nowrap;
+        width: fit-content;
+    }
+
+    // ul {
+    //     display: flex;
+    //     align-items: center;
+    //     gap: 90px;
+    //     animation: scroll-left 10s linear infinite;
+
+    // }
+}
+
+
+.aboutSection {
+    background-image: url(../images/about/bg.jpg);
+    background-position: top left;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
+    padding: 100px 200px 100px 120px;
+    height: 100vh;
+    overflow: hidden;
+    position: relative;
+
+    .img {
+        img {
+            mix-blend-mode: lighten;
+        }
+    }
+
+    .cont {
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+
+        .fs-p1 {
+            padding-top: 25px;
+        }
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Custom CSS Responsive Styling */
+@import "responsive";
