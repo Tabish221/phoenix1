@@ -6,7 +6,8 @@
    <?php include("includes/var.php"); ?>
    <meta name="description" content="...">
    <title>The Interactive AI | ...</title>
-   <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+   <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
    <?php include("includes/style.php"); ?>
    <!-- GSAP Core -->
    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/gsap.min.js"></script>
@@ -18,7 +19,7 @@
 </head>
 
 <body>
-   <div class="nav-buttons">
+   <div class="nav-buttons wow fadeInRight" data-wow-delay="0.4s">
       <button id="scrollUp">
          <svg xmlns="http://www.w3.org/2000/svg" width="12" height="6" viewBox="0 0 12 6" fill="none">
             <path d="M10.4673 5.31738C10.7589 5.58706 11.2338 5.589 11.528 5.32171C11.8222 5.05443 11.8243 4.61913 11.5327 4.34945L9.7539 2.70428C9.08396 2.08464 8.53641 1.5782 8.04854 1.21905C7.54122 0.845573 7.02628 0.575218 6.40816 0.502998C6.13714 0.471331 5.86286 0.471331 5.59184 0.502998C4.97372 0.575218 4.45878 0.845574 3.95146 1.21905C3.46359 1.5782 2.91605 2.08463 2.24611 2.70427L0.467309 4.34945C0.175726 4.61913 0.177844 5.05443 0.472041 5.32171C0.766238 5.589 1.24111 5.58706 1.53269 5.31738L3.28 3.70132C3.98914 3.04545 4.47718 2.59555 4.89071 2.29113C5.2924 1.99541 5.55042 1.89396 5.7815 1.86696C5.92659 1.85001 6.07341 1.85001 6.2185 1.86696C6.44958 1.89396 6.7076 1.99541 7.10929 2.29113C7.52282 2.59555 8.01086 3.04545 8.72 3.70132L10.4673 5.31738Z" fill="currentColor" />
@@ -33,11 +34,11 @@
 
 
    <section class="mainBanner">
-      <div class="mainBanner-backImg">
+      <div class="mainBanner-backImg wow fadeInUp" data-wow-delay="0.2s">
          <img src="assets/images/banner/home-img.png" alt="Banner Image">
       </div>
 
-      <div class="mainBanner-nav">
+      <div class="mainBanner-nav wow fadeInLeft" data-wow-delay="0.5s">
          <ul>
             <li><a href="#">Board of Directors</a></li>
             <li><a href="#">Request Assistance</a></li>
@@ -47,7 +48,7 @@
          </ul>
       </div>
 
-      <div class="mainBanner-social">
+      <div class="mainBanner-social wow fadeInRight" data-wow-delay="0.5s">
          <ul>
             <li>
                <a href="#">
@@ -102,14 +103,14 @@
       <div class="container-fluid">
          <div class="mainBanner-main">
             <div class="mainBanner-heading">
-               <h1>PHOENIX</h1>
-               <h2>COLLECTIVE</h2>
+               <h1 class=" wow fadeInDown" data-wow-delay="0.6s">PHOENIX</h1>
+               <h2 class=" wow fadeInDown" data-wow-delay="0.8s">COLLECTIVE</h2>
             </div>
 
 
             <div class="mainBanner-cont">
                <div class="mainBanner-btn">
-                  <a href="#" class="themeBtn">
+                  <a href="#" class="themeBtn wow fadeInLeft" data-wow-delay="0.6s">
                      <div class="themeBtn-leftIcon">
                         <img src="assets/images/button-corner.png" alt="">
                      </div>
@@ -128,7 +129,7 @@
                      </span>
                   </a>
 
-                  <a href="#">
+                  <a href="#" class="themeBtn wow fadeInLeft" data-wow-delay="0.7s">
                      <div class="themeBtn-leftIcon">
                         <img src="assets/images/button-corner.png" alt="">
                      </div>
@@ -147,12 +148,12 @@
                      </span>
                   </a>
                </div>
-               <p>Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type </p>
+               <p class=" wow fadeInLeft" data-wow-delay="0.8s">Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type </p>
             </div>
          </div>
       </div>
 
-      <div class="swiper-container phoenix-marquee">
+      <div class="swiper-container phoenix-marquee wow fadeInUp" data-wow-delay="0.9s">
          <div class="swiper-wrapper">
             <div class="swiper-slide">PHOENIX COLLECTIVE</div>
             <div class="swiper-slide">PHOENIX COLLECTIVE</div>
@@ -165,13 +166,13 @@
    <section class="aboutSection">
       <div class="container-fluid">
          <div class="row">
-            <div class="col-md-5">
+            <div class="col-md-5 wow fadeInleft" data-wow-delay="0.2s">
                <div class="img">
                   <img src="assets/images/about/img1.png" alt="Image">
                </div>
             </div>
 
-            <div class="col-md-7">
+            <div class="col-md-7 wow fadeInRight" data-wow-delay="0.4s">
                <div class="cont mn-hd">
                   <h6 class="fs-sm">ABOUT US</h6>
                   <h5 class="fs-lg">A CREATURE OF MYTH THAT IS CONSUMED BY FLAMES</h5>
@@ -181,7 +182,7 @@
          </div>
       </div>
 
-      <div class="swiper-container phoenix-marquee">
+      <div class="swiper-container phoenix-marquee wow fadeInUp" data-wow-delay="0.5s">
          <div class="swiper-wrapper">
             <div class="swiper-slide">PHOENIX COLLECTIVE</div>
             <div class="swiper-slide">PHOENIX COLLECTIVE</div>
@@ -191,10 +192,10 @@
       </div>
    </section>
 
-   <section class="aboutSection">
+   <section class="missionSection">
       <div class="container-fluid w-100">
          <div class="row">
-            <div class="col-md-7">
+            <div class="col-md-7 wow fadeInLeft" data-wow-delay="0.2s">
                <div class="cont mn-hd">
                   <h6 class="fs-sm">MISSION STATEMENT</h6>
                   <h5 class="fs-lg">THE MOST RADIANT STRENGTH CAN EMERGE</h5>
@@ -203,7 +204,7 @@
                </div>
             </div>
 
-            <div class="col-md-5">
+            <div class="col-md-5 wow fadeInRight" data-wow-delay="0.4s">
                <div class="img">
                   <img src="assets/images/about/img1.png" alt="Image">
                </div>
@@ -211,81 +212,45 @@
          </div>
       </div>
 
-      <div class="copyright text-center">
+      <div class="copyright wow fadeInUp" data-wow-delay="0.6s">
          <div class="copyright-leftIcon">
             <img src="assets/images/button-corner.png" alt="">
          </div>
          <div class="copyright-rightIcon">
             <img src="assets/images/button-corner.png" alt="">
          </div>
-         <div class="container">
+         <div class="container text-center">
             <p>Copyright © Designed & Developed by Lorem Ipsum 2024</p>
          </div>
       </div>
    </section>
 
+   
    <?php include("includes/scripts.php"); ?>
-   <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+   
 
    <script>
-      var swiper = new Swiper('.swiper-container', {
-         direction: 'horizontal',
-         loop: true,
-         speed: 12000, // Adjust speed for smoother/faster scroll
-         autoplay: {
-            delay: 0, // No delay between scrolls
-            disableOnInteraction: false,
-         },
-         slidesPerView: 'auto',
-         spaceBetween: 90, // Adjust spacing between slides if needed
-      });
-
       gsap.registerPlugin(ScrollTrigger, ScrollToPlugin);
 
       const sections = gsap.utils.toArray("section");
       let currentSectionIndex = 0;
 
-      // Set up ScrollTrigger on each section
+      // Set up ScrollTrigger for each section to manage scrolling
       sections.forEach((section, index) => {
          ScrollTrigger.create({
             trigger: section,
-            start: "top top", // Start when the section hits the top of the viewport
-            pin: true, // Pin the section in place
-            pinSpacing: false, // Prevent spacing between sections
-            scrub: false, // Disable scrub for smoother performance
-            snap: 1, // Snap to the next section
-            end: "+=100%", // Adjust the end value as needed
-            onEnter: () => { currentSectionIndex = index; },
-            onEnterBack: () => { currentSectionIndex = index; },
-            // onEnter: () => { // This funtion use and video play
-            //    if (section.classList.contains("section1")) {
-            //       const video1 = document.getElementById("video1");
-            //       video1.style.display = "block"; // Show video
-            //       video1.play(); // Play video
-            //    } else if (section.classList.contains("section3")) {
-            //       const video3 = document.getElementById("video3");
-            //       video3.style.display = "block"; // Show video
-            //       video3.play(); // Play video
-            //    }
-            // },
+            start: "top top",
+            pin: true,
+            pinSpacing: false,
+            snap: 1,
+            end: "+=100%",
+            onEnter: () => {
+               currentSectionIndex = index;
+            },
+            onEnterBack: () => {
+               currentSectionIndex = index;
+            },
          });
-      });
-
-      // Scroll to the next or previous section when buttons are clicked
-      document.getElementById("scrollDown").addEventListener("click", () => {
-         console.log('Down', currentSectionIndex, sections.length)
-         if (currentSectionIndex < sections.length - 1) {
-            currentSectionIndex++;
-            scrollToSection(currentSectionIndex);
-         }
-      });
-
-      document.getElementById("scrollUp").addEventListener("click", () => {
-         console.log('Up', currentSectionIndex, sections.length)
-         if (currentSectionIndex > -1) {
-            currentSectionIndex--;
-            scrollToSection(currentSectionIndex);
-         }
       });
 
       // Function to smoothly scroll to the target section
@@ -295,12 +260,30 @@
                y: sections[index],
                offsetY: 0
             },
-            duration: 1, // Adjust scroll duration for smoother effect
+            duration: 1,
             ease: "power2.inOut"
          });
-
-         console.log('object is click')
       }
+
+      // Handle "Scroll Down" button click
+      document.getElementById("scrollDown").addEventListener("click", () => {
+         if (currentSectionIndex < sections.length - 1) {
+            currentSectionIndex++;
+            scrollToSection(currentSectionIndex);
+         } else {
+            console.log("Already at the last section.");
+         }
+      });
+
+      // Handle "Scroll Up" button click
+      document.getElementById("scrollUp").addEventListener("click", () => {
+         if (currentSectionIndex > 0) {
+            currentSectionIndex--;
+            scrollToSection(currentSectionIndex);
+         } else {
+            console.log("Already at the first section.");
+         }
+      });
    </script>
 </body>
 

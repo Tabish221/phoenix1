@@ -1,10 +1,10 @@
 /*Main Css */
 ::selection{background:#87ceeb;color:#fff;text-shadow:none;}
-::-webkit-scrollbar{width:10px;background-color:#F5F5F5;}
+::-webkit-scrollbar{width:5px;background-color:#F5F5F5;}
 ::-webkit-scrollbar-button:start:decrement,
 ::-webkit-scrollbar-button:end:increment{display:none;}
 ::-webkit-scrollbar-track-piece{-webkit-box-shadow:inset 0 0 6px rgba(0,0,0,.3);background-color:#dedede;}
-::-webkit-scrollbar-thumb:vertical{border-radius:10px;-webkit-box-shadow:inset 0 0 6px rgba(0,0,0,.3);background-color:#e00000;}
+::-webkit-scrollbar-thumb:vertical{border-radius:10px;-webkit-box-shadow:inset 0 0 6px rgba(0,0,0,.3);background-color:#EBAF26;}
 
 /* Tabbing CSS */
 [class^="box-"]{display:none}

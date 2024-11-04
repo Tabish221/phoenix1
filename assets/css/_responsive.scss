@@ -1,18 +1,189 @@
 @media (max-width: 1660px) {
     // check screen size 1400px if any code change write here
-
+    .mainBanner .mainBanner-main .mainBanner-heading h1 {
+        font-size: 100px;
+    }
+    .mainBanner .mainBanner-main .mainBanner-heading h2 {
+        font-size: 45px;
+    }
+    .mainBanner .mainBanner-main .mainBanner-btn a {
+        min-width: 200px;
+        padding: 20px;
+    }
+    .mainBanner .mainBanner-main .mainBanner-cont p {
+        padding: 0 0% 0 5%;
+        width: 70%;
+        font-size: 18px;
+        line-height: 1.5;
+    }
+    .mainBanner .mainBanner-main .mainBanner-btn {
+        padding-bottom: 50px;
+    }
+    .mainBanner-nav ul li a {
+        font-size: 18px;
+    }
+    .mainBanner .mainBanner-social ul {
+        gap: 15px;
+    }
+    .nav-buttons button {
+        width: 45px;
+        height: 45px;
+    }
+    .nav-buttons {
+        right: 20px;
+        bottom: 15%;
+        gap: 10px;
+    }
+    .mainBanner .mainBanner-main {
+        padding: 40px 0 120px;
+    }
+    .fs-sm {
+        font-size: 24px;
+    }
+    .fs-lg {
+        font-size: 44px;
+    }
+    .fs-p1 {
+        font-size: 18px;
+        line-height: 1.5;
+        gap: 15px;
+    }
+    .phoenix-marquee .swiper-slide {
+        font-size: 25px;
+        letter-spacing: 0.25em;
+    }
+    .aboutSection {
+        padding: 30px 100px 90px 50px;
+    }
+    .missionSection {
+        padding: 40px 100px 90px 50px;
+    }
 }
 @media (max-width: 1399px) {
     // check screen size 1200px if any code change write here
-   
+    .mainBanner .mainBanner-main .mainBanner-heading h1 {
+        font-size: 62px;
+    }
+    .mainBanner .mainBanner-main .mainBanner-heading h2 {
+        font-size: 32px;
+    }
+    .mainBanner-nav ul li a {
+        font-size: 16px;
+    }
+    .mainBanner-nav ul {
+        gap: 12px;
+    }
+    .mainBanner-nav {
+        padding-bottom: 60px;
+    }
+    .mainBanner .mainBanner-main .mainBanner-btn a {
+        min-width: 180px;
+        padding: 12px;
+    }
+    .mainBanner .mainBanner-main .mainBanner-btn a span {
+        gap: 8px;
+        font-size: 16px;
+    }
+    .mainBanner .mainBanner-main .mainBanner-cont p {
+        padding: 0 0% 0 5%;
+        width: 60%;
+        font-size: 16px;
+        line-height: 1.3;
+    }
+    .mainBanner .mainBanner-main .mainBanner-btn {
+        padding-bottom: 30px;
+    }
+    .mainBanner .mainBanner-social ul li a svg {
+        width: 0.8em;
+        height: auto;
+        max-width: 100%;
+    }
+    .mainBanner .mainBanner-social ul li a {
+        width: 35px;
+        height: 35px;
+        font-size: 16.5px;
+    }
+    .nav-buttons button {
+        width: 35px;
+        height: 35px;
+    }
+    .mainBanner .mainBanner-social {
+        padding-bottom: 90px;
+    }
+    span.swiper-notification {
+        display: none;
+    }
+    .phoenix-marquee {
+        padding: 15px 0 15px;
+    }
+    .mainBanner .mainBanner-main {
+        padding: 30px 0 80px;
+    }
+    .aboutSection .cont .fs-p1, .missionSection .cont .fs-p1 {
+        padding-top: 10px;
+    }
+    .fs-p1 {
+        font-size: 16px;
+        line-height: 1.4;
+        gap: 10px;
+    }
+    .fs-p1::before {
+        width: 50px;
+        margin-top: 0.7em;
+    }
+    .fs-lg {
+        font-size: 32px;
+    }
+    .fs-sm {
+        font-size: 20px;
+    }
+    .aboutSection .cont, .missionSection .cont {
+        gap: 5px;
+    }
+    .mainBanner-nav ul li a {
+        font-size: 14px;
+    }
+
+    .phoenix-marquee .swiper-slide {
+        font-size: 20px;
+        letter-spacing: 0.2em;
+    }
+    .copyright {
+        padding: 10px 0;
+    }
+    .copyright p {
+        font-size: 14px;
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 }
 @media (max-width: 1199px) {
     // check screen size 992px if any code change write here
-   
 }
 @media (max-width: 991px) {
     // check screen size 768px if any code change write here
-   
 }
 @media (max-width: 767px) {
     // check screen size Mobile and less than 767px if any code change write here

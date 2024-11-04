@@ -339,6 +339,35 @@ html {
     }
 }
 
+.missionSection {
+    background-image: url(../images/about/bg.jpg);
+    background-position: top left;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
+    padding: 100px 200px 100px 120px;
+    height: 100vh;
+    overflow: hidden;
+    position: relative;
+
+    .img {
+        img {
+            mix-blend-mode: lighten;
+        }
+    }
+
+    .cont {
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+
+        .fs-p1 {
+            padding-top: 25px;
+        }
+    }
+}
+
 
 
 
