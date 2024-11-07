@@ -130,19 +130,24 @@ button{background:transparent;border:none;border-radius:0px;font-family:'Playfai
 
 .nav-buttons {
     position: fixed;
-    right: 5%;
+    right: 25px;
     bottom: 15%;
     display: flex;
     flex-direction: column;
-    gap: 25px;
+    gap: 15px;
     width: fit-content;
     height: fit-content;
     margin: auto;
     z-index: 9;
-
+    
     button {
-        width: 65px;
-        height: 65px;
+        position: relative !important;
+        left: auto;
+        top: auto;
+        bottom: auto;
+        right: auto;
+        width: 55px;
+        height: 55px;
         border-radius: 50%;
         border: 1px solid #fff;
         display: flex;
@@ -150,6 +155,19 @@ button{background:transparent;border:none;border-radius:0px;font-family:'Playfai
         justify-content: center;
         transition: all 0.4s ease-in-out;
         color: #fff;
+        margin: 0;
+        
+        svg {
+            width: 20px;
+            height: auto;
+            object-fit: contain;
+            transform-origin: center;
+            transform: rotate(-90deg);
+        }
+
+        &::after {
+            display: none;
+        }
 
         &:hover {
             color: #000;

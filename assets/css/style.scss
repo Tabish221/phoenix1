@@ -2,18 +2,25 @@
 @import "format";
 @import "header";
 @import "footer";
+@import "animation";
+@import "loader";
 
 body,
 html {
-  margin: 0;
-  padding: 0;
-  overflow-x: hidden;
-  scroll-behavior: smooth; /* Smooth scrolling */
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    scroll-behavior: smooth; /* Smooth scrolling */
+    background-color: #000;
 }
 
 @keyframes mover {
-    0% { transform: translateY(0); }
-    100% { transform: translateY(-10px); }
+    0% {
+        transform: translateY(0);
+    }
+    100% {
+        transform: translateY(-10px);
+    }
 }
 
 @keyframes scroll-left {
@@ -24,6 +31,45 @@ html {
         transform: translateX(-100%);
     }
 }
+
+/* Stripe Text Animation */
+@keyframes stripe-text-animation {
+    from {
+        background-position: 0 100px;
+    }
+
+    to {
+        background-position: 300px 300px;
+    }
+}
+
+
+.mainSwiper {
+    padding: 0;
+    width: 100%;
+
+    &>.swiper-slide {
+        width: 100%;
+        height: 100vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        opacity: 0;
+        cursor: default;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
 
 /* Main Banner CSS */
 .mainBanner {
@@ -55,15 +101,14 @@ html {
         display: flex;
         align-items: center;
         justify-content: center;
-         
 
         img {
             max-width: 80%;
             max-height: 85%;
             object-fit: contain;
             object-position: center;
-            -webkit-animation: mover 1s infinite  alternate;
-            animation: mover 1s infinite  alternate;
+            -webkit-animation: mover 1s infinite alternate;
+            animation: mover 1s infinite alternate;
         }
     }
 
@@ -95,13 +140,26 @@ html {
                     justify-content: center;
                     align-items: center;
                     border-radius: 30px;
-                    border: 1px solid #FFF;
+                    border: 1px solid #fff;
                     font-size: 24px;
                     color: #fff;
+
+                    svg {
+                        path {
+                            color: #fff;
+                            transition: all 0.4s ease-in-out;
+                        }
+                    }
 
                     &:hover {
                         background-color: #fff;
                         color: #000;
+
+                        svg {
+                            path {
+                                color: #000;
+                            }
+                        }
                     }
                 }
             }
@@ -115,12 +173,11 @@ html {
         justify-content: space-between;
         padding: 60px 0 150px;
 
-
         .mainBanner-heading {
             text-align: center;
 
             h1 {
-                color: #FFF;
+                color: #fff;
                 font-family: $lo;
                 font-size: 154px;
                 font-style: normal;
@@ -133,10 +190,14 @@ html {
                 background-size: cover;
                 -webkit-text-fill-color: transparent;
                 -webkit-background-clip: text;
+                width: 100%;
+                height: 1.2em;
+                position: relative;
+                animation: stripe-text-animation 10s alternate infinite;
             }
 
             h2 {
-                color: #FFF;
+                color: #fff;
                 font-family: $lo;
                 font-size: 65px;
                 font-weight: 500;
@@ -148,6 +209,7 @@ html {
                 background-size: cover;
                 -webkit-text-fill-color: transparent;
                 -webkit-background-clip: text;
+                animation: stripe-text-animation 10s alternate infinite;
             }
         }
 
@@ -186,8 +248,8 @@ html {
                     display: flex;
                     align-items: center;
                     gap: 8px;
-                    color: #EBAF26;
-                    text-shadow: 0px 4px 20px #EBAF26;
+                    color: #ebaf26;
+                    text-shadow: 0px 4px 20px #ebaf26;
                     font-family: $lo;
                     font-size: 20px;
                     font-weight: 600;
@@ -208,11 +270,10 @@ html {
         }
 
         .mainBanner-cont {
-            
             p {
                 padding: 0 0% 0 8%;
                 width: 60%;
-                color: #FFF;
+                color: #fff;
                 font-family: $os;
                 font-size: 20px;
                 font-style: normal;
@@ -252,7 +313,7 @@ html {
             a {
                 writing-mode: vertical-lr;
                 text-orientation: mixed;
-                color: #FFF;
+                color: #fff;
                 font-family: $os;
                 font-size: 22px;
                 font-weight: 300;
@@ -267,8 +328,8 @@ html {
 }
 
 .phoenix-marquee {
-    border-top: 2px solid #EBAF26;
-    border-bottom: 2px solid #EBAF26;
+    border-top: 2px solid #ebaf26;
+    border-bottom: 2px solid #ebaf26;
     background: #000;
     padding: 20px 0 10px;
     position: absolute;
@@ -284,7 +345,7 @@ html {
     }
 
     .swiper-slide {
-        color: #FFF;
+        color: #fff;
         font-family: $lo;
         font-size: 40px;
         font-weight: 500;
@@ -308,7 +369,6 @@ html {
 
     // }
 }
-
 
 .aboutSection {
     background-image: url(../images/about/bg.jpg);
@@ -367,38 +427,6 @@ html {
         }
     }
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 /* Custom CSS Responsive Styling */
 @import "responsive";
